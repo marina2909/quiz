@@ -1,3 +1,6 @@
+.div1{
+}
+
 .question{
 	font-family:arial;
 	font-size:25px;
@@ -5,14 +8,19 @@
 	color:#90c5a9;
 	text-align: center;
 	padding:5%;
+	height:17%
+	
 }
-
 
 .outer-div { 
     background-color: #3f2860;
 	display: block;
 	width:30%;
-	height:86%;
+	height:75%;
+	border-radius:6px;	border-style: solid;
+    border-color: #90c5a9;
+	border-width: 4px;
+	
 }
 
 .choose {
@@ -26,46 +34,127 @@
 	font-size:18px;
 	font-weight:bold;
 	text-decoration:none;
-	margin-left:30%;
-	width:35%;
+	margin-left:23%;
+	width:55%;
 	height:9%;
 	margin-top: 2%;
 	text-align: center;
 }
 
-.borderRed{
+.borderFalse{
 	border:5px solid red;
 }
 
-.borderGreen{
+.borderTrue{
 	border:5px solid green;
+	
 }
-
-
 
 
 .choose:hover{
    background-color:#fa8b60;
 }
 
-.next {
-	background-color:#90c5a9;
+.command{
 	border-radius:7px;
 	border:1px solid #057fd0;
 	display:block;
 	cursor:pointer;
-	color:black;
 	font-family:arial;
-	font-size:18px;
 	font-weight:bold;
 	text-decoration:none;
-	margin-left: 38%;
-	width:20%;
-	height:10%;
-	margin-top: 10%;
+	margin-top: 12%;
 	text-align: center;
+	display: block;
+}
+
+.start {
+	width: 62%;
+	height: 23%;
+	font-size: 30px;
+	background-color: #3f2860;
+	color: #fa8b60;
+	margin-left: 19%;
+}
+
+.start:hover {
+	background-color:#623f96;
+}
+
+.next {
+	width:32%;
+	height:8%;
+	background-color:#90c5a9;
+	color:black;
+	font-size:18px;
+	margin-left: 33%;
 }
 
 .next:hover {
-	background-color:#7a9a95;
+	background-color:#529d75;
 }
+
+.again {
+	width: 55%;
+	height: 20%;
+	font-size: 25px;
+	background-color: #3f2860;
+	color: #fa8b60;
+	margin-left: 23%;
+}
+
+.again:hover {
+	background-color:#623f96;
+}
+
+
+.dialogStart{
+	position: absolute;
+	width:33%;
+	height:60%;
+	left: 1px;
+	top: 1%;
+	background-color:#90c5a9;
+	display: block;
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+	text-align: center;
+	color: #3f2860;
+	padding-top: 13%;
+	border-radius:6px;
+	border-style: solid;
+    border-color: #fa8b60;
+	border-width: 4px;
+}
+
+
+.dialogEnd{
+	position: absolute;
+	width:30%;
+	height:52%;
+	left: 20px;
+	top: 20px;
+	background-color:#90c5a9;
+	display: none;
+	font-family:arial;
+	font-size:25px;
+	font-weight:bold;
+	text-align: center;
+	color: #3f2860;
+	padding-top: 10%;
+	border-radius:6px;
+}
+
+
+.dialogEndText{
+}
+
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+
