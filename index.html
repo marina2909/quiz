@@ -2,24 +2,25 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="jquery-2.1.1.js"></script>
+		<script src="questions.js"></script>
 		<script src="main.js"></script>
 	</head>
 	<body>
-		<div class="dialogStart">
-			<div> Click start to play quiz</div>
-			<button class="command start">Start</button>
+		<div class="dialogStart box">
+			<div class="boxText"> Click start to play quiz</div>
+			<button class="enableBoxButt">Start</button>
+		</div> 
+		<div class="dialogQuestions box">
+			<div class="boxText"></div>
+			<input type="button" class="choose" id="0"/>
+			<input type="button" class="choose" id="1"/>
+			<input type="button" class="choose" id="2"/>
+			<input type="button" class="choose" id="3"/>
+			<button class="disableBoxButt">Next</button> 
 		</div>
-		<div id ="main" class="outer-div">
-			<div class="question"></div>
-			<input type="button" class="choose" value="Zadar" id="0"/>
-			<input type="button" class="choose" value="Zagreb" id="1"/>
-			<input type="button" class="choose" value="Rijeka" id="2"/>
-			<input type="button" class="choose" value="Osijek" id="3"/>
-			<button class="command next">Next</button>
-		</div>
-		<div class="dialogEnd">
-			<div class="dialogEndText"> </div>
-			<button class="command again">Try again</button>
+		<div class="dialogEnd box">
+			<div class="boxText"> </div>
+			<button class="enableBoxButt">Try again</button>
 		</div>
 	</body>
 </html>

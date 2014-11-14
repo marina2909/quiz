@@ -1,42 +1,93 @@
-.question{
-	font-family:arial;
-	font-size:25px;
-	font-weight:bold;
-	color:#90c5a9;
-	text-align: center;
-	padding:5%;
-	height:17%
-	
+body{
+	background-color: #58506E;
 }
 
-.outer-div { 
-    background-color: #3f2860;
-	display: block;
-	width:30%;
-	height:75%;
-	border-radius:6px;	
-	border-style: solid;
-	border-color: #90c5a9;
-	border-width: 4px;
-	
+.boxText{
+	margin: 40px 30px;
+	text-align: center;
+	font-size: 28px;
+	color: black;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.box{
+	width:400px;
+	background-color: #6C8A5F;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	box-shadow: 0px 0px 50px #102607;
+}
+
+.box button{
+	border-radius: 6px;
+	border: 0px;
+	cursor: pointer;
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	width: 180px;
+	height: 50px;
+	color: #D9EFD0;
+	left: calc(50% - 90px);
+	margin-bottom: 75px;
+	margin-top: 20px;
+}
+
+.box button:hover{
+   background-image: linear-gradient(to bottom, #112507 0, #112507 100%);
+}
+
+.enableBoxButt{
+	background-image: linear-gradient(to bottom,#2E4822 0,#112507 100%);
+}
+
+.disableBoxButt{
+	background-image: linear-gradient(to bottom, #112507 0, #112507 100%);
+}
+
+.dialogStart{
+	z-index: 100;	
+}
+
+.dialogEnd{
+	display: none;
+}
+
+.dialogQuestions{ 
+	display: none;
 }
 
 .choose {
-	background-color:#ef6d3b;
-	border-radius:6px;
-	border:1px solid #057fd0;
-	display:block;
-	cursor:pointer;
-	color:black;
-	font-family:arial;
-	font-size:18px;
+	position: relative;
+	border-radius: 6px;
+	border: 0px;
+	cursor: pointer;
+	font-family: arial;
+	font-size:21px;
 	font-weight:bold;
-	text-decoration:none;
-	margin-left:23%;
-	width:55%;
-	height:9%;
-	margin-top: 2%;
+	width: 180px;
+	height: 50px;
+	margin-top: 10px;
 	text-align: center;
+	display: block;
+	left: calc(50% - 90px);
+	background-image: linear-gradient(to bottom, #1D045E 0, #0E081E 100%);
+	color: #D9EFD0;
+}
+
+.choose:hover{
+   background-image: linear-gradient(to bottom, #000000 0, #000000 100%);
+   color: #BBB1DA;
+}
+
+.disChoose{
+	background-image: linear-gradient(to bottom, #000000 0, #000000 100%);
+    color: #BBB1DA;
 }
 
 .borderFalse{
@@ -47,111 +98,3 @@
 	border:5px solid green;
 	
 }
-
-.choose:hover{
-   background-color:#fa8b60;
-}
-
-.command{
-	border-radius:7px;
-	border:1px solid #057fd0;
-	display:block;
-	cursor:pointer;
-	font-family:arial;
-	font-weight:bold;
-	text-decoration:none;
-	margin-top: 12%;
-	text-align: center;
-	display: block;
-}
-
-.start {
-	width: 62%;
-	height: 23%;
-	font-size: 30px;
-	background-color: #3f2860;
-	color: #fa8b60;
-	margin-left: 19%;
-}
-
-.start:hover {
-	background-color:#623f96;
-}
-
-.next {
-	width:32%;
-	height:8%;
-	background-color:#90c5a9;
-	color:black;
-	font-size:18px;
-	margin-left: 33%;
-}
-
-.next:hover {
-	background-color:#529d75;
-}
-
-.again {
-	width: 55%;
-	height: 20%;
-	font-size: 25px;
-	background-color: #3f2860;
-	color: #fa8b60;
-	margin-left: 23%;
-}
-
-.again:hover {
-	background-color:#623f96;
-}
-
-
-.dialogStart{
-	position: absolute;
-	width:33%;
-	height:60%;
-	left: 1px;
-	top: 1%;
-	background-color:#90c5a9;
-	display: block;
-	font-family:arial;
-	font-size:30px;
-	font-weight:bold;
-	text-align: center;
-	color: #3f2860;
-	padding-top: 13%;
-	border-radius:6px;
-	border-style: solid;
-    border-color: #fa8b60;
-	border-width: 4px;
-}
-
-
-.dialogEnd{
-	position: absolute;
-	width:30%;
-	height:52%;
-	left: 20px;
-	top: 20px;
-	background-color:#90c5a9;
-	display: none;
-	font-family:arial;
-	font-size:25px;
-	font-weight:bold;
-	text-align: center;
-	color: #3f2860;
-	padding-top: 10%;
-	border-radius:6px;
-}
-
-
-.dialogEndText{
-}
-
-.show{
-	display: block;
-}
-
-.hide{
-	display: none;
-}
-
