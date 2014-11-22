@@ -4,23 +4,25 @@
 		<script src="jquery-2.1.1.js"></script>
 		<script src="questions.js"></script>
 		<script src="main.js"></script>
+		<script src="jquery.color-2.1.2.min.js"></script>
+		<script src="animate.js"></script>
 	</head>
 	<body>
 		<div class="dialogStart box">
-			<div class="boxText"> Click start to play quiz</div>
-			<button class="enableBoxButt">Start</button>
-		</div> 
+			<div class="boxText startText">Click start to play quiz</div>
+			<button class="buttonStartEnd">Start</button>
+		</div>
 		<div class="dialogQuestions box">
 			<div class="boxText"></div>
-			<input type="button" class="choose" id="0"/>
-			<input type="button" class="choose" id="1"/>
-			<input type="button" class="choose" id="2"/>
-			<input type="button" class="choose" id="3"/>
-			<button class="disableBoxButt">Next</button> 
+			<input type="button" class="option" id="0"/><div class="true-false" id="res0"></div>
+			<input type="button" class="option" id="1"/><div class="true-false" id="res1"></div>
+			<input type="button" class="option" id="2"/><div class="true-false" id="res2"></div>
+			<input type="button" class="option" id="3"/><div class="true-false" id="res3"></div>
+			<button>Next</button> 
 		</div>
 		<div class="dialogEnd box">
-			<div class="boxText"> </div>
-			<button class="enableBoxButt">Try again</button>
+			<div class="boxText endText"></div>
+			<button class="buttonStartEnd">Try again</button>
 		</div>
 	</body>
 </html>
