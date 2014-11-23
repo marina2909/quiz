@@ -1,30 +1,35 @@
+ /* 
+	Animate is an object that contains function run that is used for all animations in game.
+	'run' can accept any function that will be executed for every frame. It also accepts 'onDone' callback function that will be executed after animation is done.  
+	In 'run' you can also define animation type. Currently possible types are 'linear' and 'elastic' but it can be easily extended to accept more animation types. 
+ */
+
 function Animate(){
-	var interval;
-	
-	function run(from, to, duration, f){
-		var interval = 0;
+	function run(from, to, duration, f, animationType, onDone){
 		var t0 = new Date();
-		interval = setInterval(function(){ 
-			var dT = new Date() - t0;
-			var res = [];
+		var res = [];
+		f(from);
+		var interval = setInterval(function(){ 
+			var t = new Date() - t0;
 			for	(i = 0; i < from.length; i++) {
-				res.push(from[i] + (to[i] - from[i]) * dT / duration);
+				var x = t / duration;
+				var y = x; // linear
+				if (animationType == 'elastic'){
+					var y = 1.417 * x + 6.875 * x * x - 7.292 * x * x * x;
+				}	
+				res[i] = (to[i] - from[i]) * y + from[i];
 			}
-			if (dT > duration){
+			if (t > duration){
 				res = to;
 				clearInterval(interval);
+				if (onDone) onDone();
 			}
 			f(res);
-		}, 50);
+		}, 25);
 	}
 	
-	
-	function stop(){
-		clearInterval(interval);
-	}
 	
 	return {
-		run: run,
-		stop: stop
+		run: run
 	}
 }
