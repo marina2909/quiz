@@ -2,7 +2,7 @@
 	
 	var counter = 1;
 	var correctCount = 0;
-	var numberOfQuestions = 2;
+	var numberOfQuestions = 10;
 	
 	var dialogStart = $(".dialogStart");
 	var dialogEnd = $(".dialogEnd");
