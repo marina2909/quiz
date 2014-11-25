@@ -7,29 +7,38 @@ body{
 	font-size: 28px;
 	font-family: arial;
 	font-weight: bold;
+	margin-top: 35px;
+}
+.wrapperBoxText{
+	height: 90px;
+	position: relative;
 }
 
 .boxText{
-	margin-top: 35px;
+	margin-top: 8px;
 	margin-bottom: 8px;
 	margin-left: 30px;
 	margin-right: 30px;
-	height: 101px;
 	text-align: center;
 	font-size: 24px;
 	color: black;
 	font-family: arial;
 	font-weight: bold;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .startText{
-	height: 40px;
-	font-size: 26px;
+	height: 23px;
+	font-size: 33px;
+	margin-top: 50px;
 }
 
 .endText{
-	height: 60px;
+	height: 46px;
 	font-size: 26px;
+	margin-top: 66px;
 }
 
 .box{
@@ -65,6 +74,7 @@ body{
 	
 .box button:disabled{
     background-image: linear-gradient(to bottom, #D1B8A3  0, #D1B8A3 100%);
+	cursor: initial;
 	color: #A9A9A9;
 }
 
@@ -80,7 +90,7 @@ body{
 	display: none;
 }
 
-.dialogQuestions{ 
+.dialogQuestion{ 
 	display: none;
 }
 
@@ -140,6 +150,10 @@ body{
 	left: calc(50% - 145px);
 	background-image: linear-gradient(to bottom, #397249 0, #9CB770 100%);
 	color: black;
+}
+
+.option:disabled{
+	cursor: initial;
 }
 
 .option:hover{

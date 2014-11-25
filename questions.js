@@ -1,4 +1,4 @@
-var q = 
+﻿var questionData = 
 [
 	{ 
 		"question": "What is the Capital of Kazahstan?",
@@ -27,7 +27,7 @@ var q =
 	 },
 	  {
 		"question": "What film didn't win 11 Oscar awards?",
-		"options": ["The Return of the King ", "Ben-Hur", "Gone With The Wind", "Titanic"],
+		"options": ["The Return of the King ", "Ben-Hur", "Gone with the Wind", "Titanic"],
 		"correct": 2
 	 },
 	  {
@@ -121,17 +121,17 @@ var q =
 		"correct": 1
 	 },
 	  {
-		"question": "Who starred George Bailey in It's a Wonderful Life",
+		"question": "Who starred George Bailey in 'It's a Wonderful Life'?",
 		"options": ["James Stewart", "Kirk Douglas ", "Steve McQueen", "Humphrey Bogart"],
 		"correct": 0
 	 },
 	 {
-		"question": "Who starred George Bailey in It's a Wonderful Life",
+		"question": "Who starred George Bailey in 'It's a Wonderful Life'?",
 		"options": ["James Stewart", "Kirk Douglas ", "Steve McQueen", "Humphrey Bogart"],
 		"correct": 0
 	 },
 	  {
-		"question": "What is the largest lake in Africa",
+		"question": "What is the largest lake in Africa?",
 		"options": ["Tanganyika", "Mweru", "Khanka", "Victoria"],
 		"correct":3
 	 },
@@ -191,7 +191,7 @@ var q =
 		"correct":0
 	 },
 	   {
-		"question": "Who starred in and directed 'Who directed the Oscar nominated film Mystic River?'",
+		"question": "Who directed the Oscar nominated film 'Mystic River'?",
 		"options": ["Kevin Costner", "Clint Eastwood", "Martin Scorsese", "Garry Marshall"],
 		"correct":1
 	 },
@@ -207,7 +207,7 @@ var q =
 	 },
 	  {
 		"question": "What was the first Pink Floyd album?",
-		"options": ["The wall", "Animals", "Pulse", "Piper at the gates of dawn"],
+		"options": ["The wall", "Animals", "Pulse", "Piper at the Gates of Dawn"],
 		"correct":3
 	 },
 	 {
@@ -261,7 +261,7 @@ var q =
 		"correct":0
 	},
 	{
-		"question": "Name the capital of Tibet?",
+		"question": "What is the capital of Tibet?",
 		"options": ["Thimphu", "Bangkok", "Kathmandu", "Lhasa"],
 		"correct":3
 	},
@@ -281,7 +281,7 @@ var q =
 		"correct":0
 	 }, 
 	 {
-		"question": "What make of car featured in the film 'Back To The Future'?",
+		"question": "What make of car featured in the film 'Back to the Future'?",
 		"options": ["De Lorean", "Audi", "Alvis", "Rover"],
 		"correct":0
 	 },
@@ -326,7 +326,7 @@ var q =
 		"correct": 0
 	 },
 	  {
-		"question": "Which museum is home to Leonardo di Vinci’s ‘Mona Lisa’?",
+		"question": "Which museum is home to Leonardo di Vinci's 'Mona Lisa'?",
 		"options": ["British museum, London", "Museum island, Berlin", "Book of Kells, Dublin", "Louvre, Paris"],
 		"correct": 3
 	 },
@@ -334,6 +334,25 @@ var q =
 		"question": "How many apostles are there in the painting 'The Last Supper' by Leonardo da Vinci?",
 		"options": ["10", "11", "12", "13"],
 		"correct": 2
+	 },
+	 {
+		"question": "Who said 'Live long and prosper'?",
+		"options": ["Captain Picard", "Mr Spock", "Batman", "Elton John"],
+		"correct": 1
+	 },
+	  {
+		"question": "What is the major religion in Indonesia?",
+		"options": ["Buddhism", "Hinduism", "Christianity", "Islam"],
+		"correct": 3
+	 },
+	{
+		"question": "How many-carat is pure gold?",
+		"options": ["12", "98", "58", "24"],
+		"correct": 3
+	 },
+	 	{
+		"question": "How many syllables  are in Japanese haiku?",
+		"options": ["7", "13", "15", "17"],
+		"correct": 3
 	 }
-	 
 ]
