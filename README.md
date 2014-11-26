@@ -1,7 +1,9 @@
 Simple Quiz
 =========================
 
-Web version of just another simple quiz.
+Web version of just another simple quiz. You can try this game at 
+[Guess the cities](https://marinasovic.com/simplequiz).
+
 
 
 Getting started
