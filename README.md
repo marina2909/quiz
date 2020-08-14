@@ -1,8 +1,7 @@
 Simple Quiz
 =========================
 
-Web version of just another simple quiz. You can try this game at 
-[Simple quiz](http://www.marinasovic.com/simplequiz/).
+Web version of just another simple quiz.
 
 
 
